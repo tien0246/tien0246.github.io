@@ -1,3 +1,22 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector(".toggle");
+  const body = document.querySelector("body");
+
+  if (localStorage.getItem("mode") === "light") {
+    body.classList.add("light");
+  }
+
+  toggle.addEventListener("click", () => {
+    body.classList.toggle("light");
+
+    if (body.classList.contains("light")) {
+      localStorage.setItem("mode", "light");
+    } else {
+      localStorage.removeItem("mode");
+    }
+  });
+});
+
 function toggleCategory(header) {
   const list = header.nextElementSibling;
   const isOpening = !list.classList.contains('open');
@@ -26,23 +45,3 @@ function toggleCategory(header) {
     }, 400); 
   }
 }
-
-
-
-const mode = localStorage.getItem("mode");
-const toggle = document.querySelector(".toggle");
-const body = document.querySelector("body");
-const listItemCategory = document.querySelector(".listItemCategory");
-if (mode === "light") {
-  body.classList.add("light");
-}
-
-toggle.addEventListener("click", () => {
-  body.classList.toggle("light");
-
-  if (body.classList.contains("light")) {
-    localStorage.setItem("mode", "light");
-  } else {
-    localStorage.setItem("mode", "");
-  }
-});
