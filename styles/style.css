@@ -256,25 +256,26 @@ h2, h3, h4, h5, h6 {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
+  grid-column: 2 / 3;
 }
 
 .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
   gap: 1.5rem;
-  max-width: 1400px;
+  max-width: 1536px;
   margin-inline: auto;
+  padding-inline: 1rem;
 }
 
-.container {
-  flex-grow: 1;
-  min-width: 0;
-  padding-inline: 1rem;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.toc-wrapper {
+  grid-column: 1 / 2;
 }
+
+.right-placeholder {
+  grid-column: 3 / 4;
+}
+
 
 /* NAVBAR START */
 
@@ -686,6 +687,16 @@ h2, h3, h4, h5, h6 {
 
 /* categories end */
 @media (max-width: 1024px) {
+  .content-wrapper {
+    grid-template-columns: 1fr;
+    padding-inline: 0.5rem;
+  }
+  .main-wrapper {
+    grid-column: 1 / -1;
+  }
+  .toc-wrapper, .right-placeholder, .toc-fixed {
+    display: none;
+  }
   .hugo-encryptor-form {
     flex-direction: column;
     align-items: stretch; 
@@ -694,9 +705,6 @@ h2, h3, h4, h5, h6 {
   .hugo-encryptor-input,
   .hugo-encryptor-button {
     width: 100%;
-  }
-  .toc-fixed{
-    display: none;
   }
   .singleHeadImg {
     display: none;
@@ -748,10 +756,6 @@ h2, h3, h4, h5, h6 {
     font-size: 32px; 
   }
 
-  .toc-fixed{
-    display: none;
-  }
-
   .singleHeadDesc {
     font-size: 16px;
   }
@@ -794,9 +798,6 @@ h2, h3, h4, h5, h6 {
   .hugo-encryptor-input,
   .hugo-encryptor-button {
     width: 100%;
-  }
-  .toc-fixed{
-    display: none;
   }
   .modal-box{
     width: 70%;
