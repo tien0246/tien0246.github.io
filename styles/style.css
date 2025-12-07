@@ -260,15 +260,18 @@ h2, h3, h4, h5, h6 {
 
 .content-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 1.5rem;
+  max-width: 1400px;
+  margin-inline: auto;
 }
 
 .container {
   width: min(100%, 1280px);
-  /* margin-inline is no longer needed as centering is handled by the flex parent */
-  padding-inline: 1rem; /* Replaces padding-left/right and is responsive */
+  flex-grow: 1;
+  min-width: 0;
+  padding-inline: 1rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
