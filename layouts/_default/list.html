@@ -6,14 +6,21 @@
   
     <div class="listItem" onclick="location.href='{{ .Permalink }}'">
       
-      <img
-        src={{
-        .Params.image
-        }}
-        alt="{{.Title}}"
-        class="listItemImage"
-        loading="lazy"
-      />
+      {{ with .Resources.GetMatch .Params.image }}
+        <img
+          src="{{ .Permalink }}"
+          alt="{{ $.Title }}"
+          class="listItemImage"
+          loading="lazy"
+        />
+      {{ else }}
+        <img
+          src="{{ .Params.image | absURL }}"
+          alt="{{ .Title }}"
+          class="listItemImage"
+          loading="lazy"
+        />
+      {{ end }}
       <div class="listItemTexts">
         <h1 class="listItemTitle">
           <a href="{{.Permalink}}">{{.Title}}</a>
@@ -21,14 +28,13 @@
         <time>{{ dateFormat .Site.Params.dateFormat  .Date}}</time>
         <p class="listItemDesc">{{.Params.description}}</p>
         <div class="listItemDetail">
-          {{ $avatars := .Params.avatar }}
-          {{ range $index, $term := .GetTerms "authors" }}
-            <img src="{{ index $avatars $index }}" loading="lazy" alt="" class="listItemAvatar"/>
-            <span>
-              
-              <a href="{{ $term.Permalink }}">{{ $term.Name }}</a>
-
-            </span>
+          {{ range .Params.authors }}
+            {{ with $.Site.Data.authors.tien0246 }}
+              <img src="{{ .avatar | absURL }}" loading="lazy" alt="{{ .name }}" class="listItemAvatar"/>
+              <span>
+                <a href="#">{{ .name }}</a>
+              </span>
+            {{ end }}
           {{ end }}
         </div>
         <div class="listItemCategories">

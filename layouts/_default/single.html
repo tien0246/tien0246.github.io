@@ -1,5 +1,9 @@
 {{ define "main" }}
-  <img src={{ .Params.image }} alt={{.Title}} class="singleHeadImg">
+  {{ with .Resources.GetMatch .Params.image }}
+    <img src="{{ .Permalink }}" alt="{{ $.Title }}" class="singleHeadImg">
+  {{ else }}
+    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" class="singleHeadImg">
+  {{ end }}
   <div class="singleHead">
     <div class="singleHeadTexts">
       <h1 class="singleHeadTitle">{{.Title}}</h1>
@@ -8,7 +12,7 @@
       <div class="singleHeadDetail">
         {{ range .Params.authors }}
           {{ with $.Site.Data.authors.tien0246 }}
-            <img src="{{ .avatar }}" loading="lazy" alt="{{ .name }}" class="singleAvatar">
+            <img src="{{ .avatar | absURL }}" loading="lazy" alt="{{ .name }}" class="singleAvatar">
             <span>
                 <a href="#">{{ .name }}</a>
             </span>
