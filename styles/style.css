@@ -261,15 +261,16 @@ h2, h3, h4, h5, h6 {
 
 .content-wrapper {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: minmax(250px, 1fr) minmax(0, 1280px) minmax(250px, 1fr);
   gap: 1.5rem;
-  max-width: 1536px;
   margin-inline: auto;
   padding-inline: 1rem;
 }
 
 .toc-wrapper {
   grid-column: 1 / 2;
+  position: sticky;
+  top: 105px;
 }
 
 .right-placeholder {
@@ -802,4 +803,38 @@ h2, h3, h4, h5, h6 {
   .modal-box{
     width: 70%;
   }
+}
+
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--bgSoft);
+  color: var(--textItem);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 20px;
+  transition: opacity 0.3s, visibility 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#scrollTopBtn.visible {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+#scrollTopBtn:hover {
+  background-color: var(--buttonHover);
+  color: var(--text);
 }
