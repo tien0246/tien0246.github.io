@@ -262,12 +262,16 @@ h2, h3, h4, h5, h6 {
 
 
 .container {
-  width: min(100%, 1280px);
-  margin-inline: auto; /* Replaces margin: auto */
-  padding-inline: 1rem; /* Replaces padding-left/right and is responsive */
+  /* border: 1px solid white; */
+  width: 70%;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  
+  /* justify-content: space-between; */
 }
 
 /* NAVBAR START */
@@ -680,6 +684,21 @@ h2, h3, h4, h5, h6 {
 
 
 /* categories end */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1366px;
+  }
+}
+@media (max-width: 1366px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
 @media (max-width: 1024px) {
   .hugo-encryptor-form {
     flex-direction: column;
@@ -689,6 +708,11 @@ h2, h3, h4, h5, h6 {
   .hugo-encryptor-input,
   .hugo-encryptor-button {
     width: 100%;
+  }
+  .container {
+    max-width: 768px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .toc-fixed{
     display: none;
@@ -732,6 +756,9 @@ h2, h3, h4, h5, h6 {
   .hugo-encryptor-input,
   .hugo-encryptor-button {
     width: 100%;
+  }
+  .container {
+    max-width: 640px;
   }
   .singleHead {
     flex-direction: column;  
@@ -781,6 +808,9 @@ h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 640px) {
+  .container{
+    width: 100%;
+  }
   .hugo-encryptor-form {
     flex-direction: column;
     align-items: stretch; 
@@ -789,6 +819,9 @@ h2, h3, h4, h5, h6 {
   .hugo-encryptor-input,
   .hugo-encryptor-button {
     width: 100%;
+  }
+  .container {
+    max-width: 475px;
   }
   .toc-fixed{
     display: none;
