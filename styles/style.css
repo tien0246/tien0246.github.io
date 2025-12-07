@@ -110,19 +110,19 @@ a {
 
 .toc-fixed {
   position: sticky;
-  top: 105px; /* Stick below the navbar */
-  width: 250px; /* A fixed width can be better for a side column */
+  top: 105px;
+  width: 250px;
   flex-shrink: 0; /* Prevent the TOC from shrinking */
   border: 1px solid var(--listItemBorder);
   max-height: calc(100vh - 120px);
   overflow-y: auto;
   padding: 1rem;
-  background-color: var(--bg);
+  background-color: rgba(29, 45, 62, 0.8); /* Semi-transparent background for blur effect */
+  backdrop-filter: blur(6px);
   border-radius: 12px;
   font-size: 0.9rem;
   color: var(--text);
   transition: all 0.3s ease;
-/* Ẩn scrollbar (Chrome, Edge, Safari) */
   scrollbar-width: none;        /* Firefox */
   -ms-overflow-style: none;     /* Internet Explorer 10+ */
 }
