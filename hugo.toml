@@ -1,6 +1,6 @@
 baseURL = 'https://tien0246.github.io/'
 languageCode = 'en-us'
-title = 'tung09hcm blog'
+title = 'tien0246 blog'
 canonifyURLs = true
 relativeURLs = true
 

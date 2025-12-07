@@ -2,16 +2,16 @@
   "name": "protect_post",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/tung09hcm/hugoblog_template#readme",
+  "homepage": "https://github.com/tien0246/tien0246.github.io#readme",
   "bugs": {
-    "url": "https://github.com/tung09hcm/hugoblog_template/issues"
+    "url": "https://github.com/tien0246/tien0246.github.io/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tung09hcm/hugoblog_template.git"
+    "url": "git+https://github.com/tien0246/tien0246.github.io.git"
   },
   "license": "ISC",
-  "author": "tung09hcm",
+  "author": "tien0246",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {

@@ -34,14 +34,6 @@ You simply write and push — encryption + deployment are automatic.
 Clone the repository:
 
 ```bash
-git clone https://github.com/tung09hcm/CyberMonoX.git
-cd CyberMonoX
-```
-
-🛠 Tech Stack
-Hugo — Static Site Generator
-CryptoJS — AES encryption
-GitHub Actions — CI/CD pipeline
-
-🙌 Author
-Created and maintained by @tung09hcm
+git clone https://github.com/tien0246/tien0246.github.io.git
+...
+Created and maintained by @tien0246
