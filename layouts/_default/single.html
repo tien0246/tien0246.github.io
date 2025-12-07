@@ -6,16 +6,14 @@
       <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
       <p class="singleHeadDesc">{{.Params.description}}</p>
       <div class="singleHeadDetail">
-        {{ $avatars := .Params.avatar }}
-        {{ range $index, $term := .GetTerms "authors" }}
-          <img src={{ index $avatars $index }} loading="lazy" alt="" class="singleAvatar">
-          <span>
-              
-              <a href="{{ $term.Permalink }}">{{ $term.Name }}</a>
-
-          </span>
+        {{ range .Params.authors }}
+          {{ with $.Site.Data.authors.tien0246 }}
+            <img src="{{ .avatar }}" loading="lazy" alt="{{ .name }}" class="singleAvatar">
+            <span>
+                <a href="#">{{ .name }}</a>
+            </span>
+          {{ end }}
         {{ end }}
-        
       </div>
       <div class="singleHeadDetail">
         {{ range (.GetTerms "categories")}}
