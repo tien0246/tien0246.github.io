@@ -42,6 +42,10 @@ img{
   object-fit: cover;
   border-radius: 15px;
 }
+.singleContent img {
+  max-width: 100%;
+  height: auto;
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -269,8 +273,6 @@ h2, h3, h4, h5, h6 {
 
 .toc-wrapper {
   grid-column: 1 / 2;
-  position: sticky;
-  top: 105px;
 }
 
 .right-placeholder {
