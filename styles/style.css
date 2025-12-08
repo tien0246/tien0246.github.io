@@ -166,7 +166,7 @@ a {
 }
 
 .main-content {
-  flex: 4;
+  flex: 3;
 }
 
 
@@ -265,7 +265,7 @@ h2, h3, h4, h5, h6 {
 
 .container {
   /* border: 1px solid white; */
-  width: 90%;
+  width: 95%;
   margin: auto;
   min-height: 100vh;
   display: flex;
