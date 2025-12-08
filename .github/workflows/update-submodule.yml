@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           submodules: 'true'
-          token: ${{ secrets.PAT }} # Personal Access Token needed to push changes
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # Personal Access Token needed to push changes
 
       - name: Update submodule
         run: |
