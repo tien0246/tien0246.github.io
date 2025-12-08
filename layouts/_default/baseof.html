@@ -7,7 +7,12 @@
   <meta name="description" content={{or .Params.description .Site.Params.description}}>
   {{ $style := resources.Get "styles/style.css" | fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
-  <link rel="icon" href="/images/favicon.png" />
+  {{ with resources.Get "images/doraemon.jpg" }}
+    {{ $favicon_16 := .Resize "16x16" }}
+    {{ $favicon_32 := .Resize "32x32" }}
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon_16.Permalink }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon_32.Permalink }}">
+  {{ end }}
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap"></noscript>
   {{ $syntax := resources.Get "styles/syntax.css" | fingerprint }}
