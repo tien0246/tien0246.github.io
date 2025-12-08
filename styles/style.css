@@ -108,10 +108,15 @@ a {
   overflow: hidden;          
 }
 
-.toc-container {
-  position: sticky;
-  top: 105px;
+.toc-fixed {
+  width: 20%;
+  min-width: 200px;
+  max-width: 400px;
   border: 1px solid var(--listItemBorder);
+  position: fixed;
+  top: 100px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
   padding: 1rem;
   background-color: var(--bg);
   border-radius: 12px;
@@ -119,54 +124,47 @@ a {
   color: var(--text);
   backdrop-filter: blur(6px);
   transition: all 0.3s ease;
+/* Ẩn scrollbar (Chrome, Edge, Safari) */
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* Internet Explorer 10+ */
 }
+.toc-fixed::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+} 
 
-.toc-container ul {
+.toc-fixed ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-.toc-container li {
+.toc-fixed li {
   margin-bottom: 0.6rem;
   padding-left: 0.5rem;
   border-left: 2px solid transparent;
   transition: border-color 0.2s;
 }
 
-.toc-container li:hover {
+.toc-fixed li:hover {
   border-left-color: var(--tocHover);
   color: var(--tocHover);
 }
 
-.toc-container a {
+.toc-fixed a {
   color: inherit;
   text-decoration: none;
 }
 
-.toc-container a:hover {
+.toc-fixed a:hover {
   text-decoration: underline;
 }
 /* Highlight TOC item đang active */
-.toc-container a.active {
+.toc-fixed a.active {
   color: var(--tocHover);
   padding: 2px 6px;
   border-radius: 6px;
   font-weight: bold;
   transition: all 0.3s;
-}
-
-.post-layout {
-  display: flex;
-  gap: 20px;
-}
-
-.left-sidebar {
-  flex: 1;
-}
-
-.main-content {
-  flex: 3;
 }
 
 
@@ -265,7 +263,9 @@ h2, h3, h4, h5, h6 {
 
 .container {
   /* border: 1px solid white; */
-  width: 95%;
+  width: 70%;
+  padding-left: 100px;
+  padding-right: 100px;
   margin: auto;
   min-height: 100vh;
   display: flex;
@@ -533,8 +533,8 @@ h2, h3, h4, h5, h6 {
 
 .singleHeadImg {
   width: 100%;
-  max-height: 400px;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
@@ -700,14 +700,22 @@ h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 1024px) {
-  .post-layout {
+  .hugo-encryptor-form {
     flex-direction: column;
+    align-items: stretch; 
   }
-  .left-sidebar, .right-sidebar {
-    display: none;
-  }
-  .main-content {
+
+  .hugo-encryptor-input,
+  .hugo-encryptor-button {
     width: 100%;
+  }
+  .container {
+    max-width: 768px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .toc-fixed{
+    display: none;
   }
   .singleHeadImg {
     display: none;
