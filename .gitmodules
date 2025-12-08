@@ -1,3 +1,4 @@
 [submodule "content/post"]
 	path = content/post
 	url = git@github.com:tien0246/blog.git
+	branch = main
