@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CTF on tien0246 blog</title><link>https://tien0246.github.io/categories/ctf/</link><description>Recent content in CTF on tien0246 blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 15 Nov 2024 18:59:00 +0700</lastBuildDate><atom:link href="https://tien0246.github.io/categories/ctf/index.xml" rel="self" type="application/rss+xml"/><item><title>CTF Writeup - Space Maze (1337up Live 2024)</title><link>https://tien0246.github.io/post/spacemaze/</link><pubDate>Fri, 15 Nov 2024 18:59:00 +0700</pubDate><guid>https://tien0246.github.io/post/spacemaze/</guid><description>&lt;h1 id="ctf-writeup---space-maze-1337up-live-2024">CTF Writeup - Space Maze (1337up Live 2024)&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CTF on tien0246 blog</title><link>https://tien0246.github.io/categories/ctf/</link><description>Recent content in CTF on tien0246 blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 15 Nov 2024 18:59:00 +0700</lastBuildDate><atom:link href="https://tien0246.github.io/categories/ctf/index.xml" rel="self" type="application/rss+xml"/><item><title>Space Maze (1337up Live 2024)</title><link>https://tien0246.github.io/post/spacemaze/</link><pubDate>Fri, 15 Nov 2024 18:59:00 +0700</pubDate><guid>https://tien0246.github.io/post/spacemaze/</guid><description>&lt;h1 id="ctf-writeup---space-maze-1337up-live-2024">CTF Writeup - Space Maze (1337up Live 2024)&lt;/h1>
 &lt;hr>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>&lt;strong>CTF Name:&lt;/strong> 1337up Live 2024&lt;br>
@@ -8,6 +8,5 @@
 &lt;strong>Solvers:&lt;/strong> 3&lt;/p>
 &lt;p>&lt;strong>Description:&lt;/strong>&lt;br>
 Lost in a maze among the stars, you must find the exit before time runs out. Think fast, move faster, and discover what secrets the maze holds. Good luck!&lt;/p>
-&lt;hr>
 &lt;h2 id="preface">Preface&lt;/h2>
 &lt;p>This is my very first writeup! I hope this serves as a decent guide, and I’d love feedback on how to improve it. Note: Since the CTF servers closed after the event, I couldn&amp;rsquo;t include many images. So, please use your imagination!&lt;/p></description></item></channel></rss>
