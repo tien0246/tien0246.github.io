@@ -1,16 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tien0246 on tien0246 blog</title><link>https://tien0246.github.io/authors/tien0246/</link><description>Recent content in Tien0246 on tien0246 blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 11 Dec 2025 23:05:21 +0700</lastBuildDate><atom:link href="https://tien0246.github.io/authors/tien0246/index.xml" rel="self" type="application/rss+xml"/><item><title>Meowware Writeup</title><link>https://tien0246.github.io/post/greyctf/meowware/</link><pubDate>Thu, 11 Dec 2025 23:05:21 +0700</pubDate><guid>https://tien0246.github.io/post/greyctf/meowware/</guid><description>&lt;h1 id="meowware-writeup">Meowware Writeup&lt;/h1>
-&lt;p>I got infected. Help me find out what was stolen!&lt;/p>
-&lt;p>Challenge:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Name&lt;/strong>: Meowware&lt;/li>
-&lt;li>&lt;strong>Points&lt;/strong>: 996&lt;/li>
-&lt;li>&lt;strong>Author&lt;/strong>: Elma&lt;/li>
-&lt;/ul>
-&lt;h2 id="initial-analysis">Initial Analysis&lt;/h2>
-&lt;p>I started by analyzing the provided ELF file using the &lt;code>file&lt;/code> command:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ file ./client
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./client: ELF 64-bit LSB executable, x86-64, version &lt;span class="m">1&lt;/span> &lt;span class="o">(&lt;/span>SYSV&lt;span class="o">)&lt;/span>, BuildID&lt;span class="o">[&lt;/span>sha1&lt;span class="o">]=&lt;/span>53a87fd5741a38f22047405a7e29d947de8cdd45, &lt;span class="k">for&lt;/span> GNU/Linux 3.2.0, statically linked, no section header
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Running the program yielded no visible output. Loading it into IDA revealed very little information, suggesting it was packed. I tried unpacking it with UPX, but it failed:&lt;/p></description></item><item><title>Password post</title><link>https://tien0246.github.io/post/myself/</link><pubDate>Thu, 12 Jun 2025 23:36:00 +0700</pubDate><guid>https://tien0246.github.io/post/myself/</guid><description>&lt;div class="hugo-encryptor-container">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tien0246 on tien0246 blog</title><link>https://tien0246.github.io/authors/tien0246/</link><description>Recent content in Tien0246 on tien0246 blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 12 Jun 2025 23:36:00 +0700</lastBuildDate><atom:link href="https://tien0246.github.io/authors/tien0246/index.xml" rel="self" type="application/rss+xml"/><item><title>Password post</title><link>https://tien0246.github.io/post/myself/</link><pubDate>Thu, 12 Jun 2025 23:36:00 +0700</pubDate><guid>https://tien0246.github.io/post/myself/</guid><description>&lt;div class="hugo-encryptor-container">
  &lt;h1>
  This content needs password 
  &lt;/h1>
@@ -151,7 +139,7 @@
 &lt;p>&lt;strong>Author:&lt;/strong> dagurb • &lt;strong>Solves:&lt;/strong> 111
 &lt;strong>Description:&lt;/strong> You shouldn&amp;rsquo;t need to call your crypto teammate for this challenge lol.&lt;/p>
 &lt;p>&lt;strong>Solution:&lt;/strong>
-This challenge involves reversing a custom block cipher-like operation. The solution implements the inverse of the transformation applied to an 8-byte block over 4096 rounds, using a pre-computed inverse substitution box. The flag is revealed after reversing all blocks and removing PKCS#7 padding.&lt;/p></description></item><item><title>Space Maze (1337up Live 2024)</title><link>https://tien0246.github.io/post/1337up/spacemaze/</link><pubDate>Mon, 18 Nov 2024 18:59:00 +0700</pubDate><guid>https://tien0246.github.io/post/1337up/spacemaze/</guid><description>&lt;h1 id="ctf-writeup---space-maze-1337up-live-2024">CTF Writeup - Space Maze (1337up Live 2024)&lt;/h1>
+This challenge involves reversing a custom block cipher-like operation. The solution implements the inverse of the transformation applied to an 8-byte block over 4096 rounds, using a pre-computed inverse substitution box. The flag is revealed after reversing all blocks and removing PKCS#7 padding.&lt;/p></description></item><item><title>Space Maze (1337up Live 2024)</title><link>https://tien0246.github.io/post/1337up/</link><pubDate>Mon, 18 Nov 2024 18:59:00 +0700</pubDate><guid>https://tien0246.github.io/post/1337up/</guid><description>&lt;h1 id="ctf-writeup---space-maze-1337up-live-2024">CTF Writeup - Space Maze (1337up Live 2024)&lt;/h1>
 &lt;hr>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>&lt;strong>CTF Name:&lt;/strong> 1337up Live 2024&lt;br>
