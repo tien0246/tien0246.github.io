@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Game Hacking on tien0246 blog</title><link>https://tien0246.github.io/categories/game-hacking/</link><description>Recent content in Game Hacking on tien0246 blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 16 Dec 2025 10:30:00 +0700</lastBuildDate><atom:link href="https://tien0246.github.io/categories/game-hacking/index.xml" rel="self" type="application/rss+xml"/><item><title>Arena of Valor Hotfix Analysis</title><link>https://tien0246.github.io/post/aov/</link><pubDate>Tue, 16 Dec 2025 10:30:00 +0700</pubDate><guid>https://tien0246.github.io/post/aov/</guid><description>&lt;h1 id="arena-of-valor-hotfix-analysis">Arena of Valor Hotfix Analysis&lt;/h1>
 &lt;p>This document provides a comprehensive reverse-engineering analysis of the Tencent&amp;rsquo;s InjectFix as implemented in Arena of Valor version 1.60.1.9.&lt;/p>
 &lt;h2 id="disclaimer--ethical-statement">Disclaimer &amp;amp; Ethical Statement&lt;/h2>
-&lt;p>This research is conducted and documented solely for &lt;strong>educational and security research purposes&lt;/strong>. The primary goal is to analyze the technical architecture of the iFix hotfix system, understand AES implementation in Unity, and explore Virtual Machine internals.&lt;/p>
-&lt;p>The author &lt;strong>does not&lt;/strong> encourage, support, or condone the use of this information for:&lt;/p></description></item><item><title>GreyCTF 2025 Writeup</title><link>https://tien0246.github.io/post/greyctf/</link><pubDate>Sun, 01 Jun 2025 20:30:00 +0700</pubDate><guid>https://tien0246.github.io/post/greyctf/</guid><description>&lt;h1 id="greyctf-2025-writeup">GreyCTF 2025 Writeup&lt;/h1>
+&lt;p>This research is conducted and documented solely for &lt;strong>educational and security research purposes&lt;/strong>.&lt;/p>
+&lt;p>The author &lt;strong>does not&lt;/strong> encourage, support, or condone the use of this information for:&lt;/p>
+&lt;ul>
+&lt;li>Creating malicious cheats or hacks.&lt;/li>
+&lt;li>Disrupting game services or violating the Terms of Service of Arena of Valor.&lt;/li>
+&lt;li>Infringing upon the intellectual property rights of Tencent, Garena, or any associated parties.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Notice:&lt;/strong> If you are an authorized representative of the relevant parties and wish for this content to be removed or redacted, please contact the author immediately. This content will be removed upon valid request.&lt;/p></description></item><item><title>GreyCTF 2025 Writeup</title><link>https://tien0246.github.io/post/greyctf/</link><pubDate>Sun, 01 Jun 2025 20:30:00 +0700</pubDate><guid>https://tien0246.github.io/post/greyctf/</guid><description>&lt;h1 id="greyctf-2025-writeup">GreyCTF 2025 Writeup&lt;/h1>
 &lt;p>This post covers my solutions for two challenges from GreyCTF 2025: &amp;ldquo;Thecatshop&amp;rdquo; and &amp;ldquo;Meowware&amp;rdquo;.&lt;/p>
 &lt;h2 id="thecatshop">Thecatshop&lt;/h2>
 &lt;p>&lt;strong>Author:&lt;/strong> elijah5399
