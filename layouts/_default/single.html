@@ -12,7 +12,7 @@
       <div class="singleHeadDetail">
         {{ range .Params.authors }}
           {{ with (index $.Site.Data.authors .) }}
-            <img src="{{ .avatar | relURL }}" loading="lazy" alt="{{ .name }}" class="singleAvatar">
+            <img src="{{ .avatar | absURL }}" loading="lazy" alt="{{ .name }}" class="singleAvatar">
             <span>
                 <a href="#">{{ .name }}</a>
             </span>
