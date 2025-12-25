@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content={{or .Params.description .Site.Params.description}}>
   {{ $style := resources.Get "styles/style.css" | fingerprint }}
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@latest/github-markdown.css">
+  {{ $github_markdown := resources.Get "styles/github-markdown-custom.css" | fingerprint }}
+  <link rel="stylesheet" href="{{ $github_markdown.Permalink }}" integrity="{{ $github_markdown.Data.Integrity }}">
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
   {{ with resources.Get "images/doraemon.jpg" }}
     {{ $favicon_16 := .Resize "16x16" }}
@@ -18,7 +19,6 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap"></noscript>
   {{ $syntax := resources.Get "styles/syntax.css" | fingerprint }}
   <link rel="stylesheet" href="{{ $syntax.Permalink }}" integrity="{{ $syntax.Data.Integrity }}">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@latest/github-markdown.css">
   <title>{{ .Title }}</title>
 </head>
 <body>
