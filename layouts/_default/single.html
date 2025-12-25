@@ -11,8 +11,8 @@
       <p class="singleHeadDesc">{{.Params.description}}</p>
       <div class="singleHeadDetail">
         {{ range .Params.authors }}
-          {{ with $.Site.Data.authors.tien0246 }}
-            <img src="{{ .avatar | absURL }}" loading="lazy" alt="{{ .name }}" class="singleAvatar">
+          {{ with (index $.Site.Data.authors .) }}
+            <img src="{{ .avatar | relURL }}" loading="lazy" alt="{{ .name }}" class="singleAvatar">
             <span>
                 <a href="#">{{ .name }}</a>
             </span>
