@@ -8,30 +8,7 @@
 &lt;li>Disrupting game services or violating the Terms of Service of Arena of Valor.&lt;/li>
 &lt;li>Infringing upon the intellectual property rights of Tencent, Garena, or any associated parties.&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Notice:&lt;/strong> If you are an authorized representative of the relevant parties and wish for this content to be removed or redacted, please contact the author immediately. This content will be removed upon valid request.&lt;/p></description></item><item><title>About Me - A Journey into Backend development</title><link>https://tien0246.github.io/about/about/</link><pubDate>Thu, 12 Jun 2025 23:36:00 +0700</pubDate><guid>https://tien0246.github.io/about/about/</guid><description>&lt;h2 id="about-me">About Me&lt;/h2>
-&lt;p>I am currently a third-year developer at Ho Chi Minh University of Technology, majoring in Software Development.&lt;/p>
-&lt;p>My backend stack includes:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Spring Boot (Java)&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>ASP.NET (C#)&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>PHP Laravel&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Node.js (Express, NestJS)&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;p>Database experience:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>SQL Server&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>PostgreSQL&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>MongoDB&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;p>I also work with:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Android Development&lt;/strong> using Kotlin &amp;amp; Jetpack Compose&lt;/li>
-&lt;li>&lt;strong>Game Development&lt;/strong> using Unity and C#&lt;/li>
-&lt;/ul>
-&lt;p>I&amp;rsquo;m passionate about backend systems, scalable applications, and building full-stack solutions.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">greet&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">f&lt;/span>&lt;span class="s2">&amp;#34;Hello, &lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">! Welcome to my blog.&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="./images/whale.jpg" alt="title">&lt;/p></description></item><item><title>GreyCTF 2025 Writeup</title><link>https://tien0246.github.io/post/greyctf/</link><pubDate>Sun, 01 Jun 2025 20:30:00 +0700</pubDate><guid>https://tien0246.github.io/post/greyctf/</guid><description>&lt;h1 id="greyctf-2025-writeup">GreyCTF 2025 Writeup&lt;/h1>
+&lt;p>&lt;strong>Notice:&lt;/strong> If you are an authorized representative of the relevant parties and wish for this content to be removed or redacted, please contact the author immediately. This content will be removed upon valid request.&lt;/p></description></item><item><title>GreyCTF 2025 Writeup</title><link>https://tien0246.github.io/post/greyctf/</link><pubDate>Sun, 01 Jun 2025 20:30:00 +0700</pubDate><guid>https://tien0246.github.io/post/greyctf/</guid><description>&lt;h1 id="greyctf-2025-writeup">GreyCTF 2025 Writeup&lt;/h1>
 &lt;p>This post covers my solutions for two challenges from GreyCTF 2025: &amp;ldquo;Thecatshop&amp;rdquo; and &amp;ldquo;Meowware&amp;rdquo;.&lt;/p>
 &lt;h2 id="thecatshop">Thecatshop&lt;/h2>
 &lt;p>&lt;strong>Author:&lt;/strong> elijah5399
