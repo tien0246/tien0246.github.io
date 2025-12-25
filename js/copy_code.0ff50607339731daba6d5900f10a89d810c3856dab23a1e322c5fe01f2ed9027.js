@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       highlightDiv.appendChild(copyButton);
 
       copyButton.addEventListener("click", function () {
-        var codeToCopy = codeBlock.innerText;
+        var codeToCopy = codeBlock.textContent;
         navigator.clipboard.writeText(codeToCopy).then(
           function () {
             copyButton.textContent = "Copied!";
