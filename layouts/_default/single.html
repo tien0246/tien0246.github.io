@@ -29,7 +29,11 @@
     
   </div>
   <div class="singleBottom">
-    <div class="singleContent">{{ .Content }}</div>
+    <head>
+    {{ $github_markdown := resources.Get "styles/github-markdown-custom.css" | fingerprint }}
+    <link rel="stylesheet" href="{{ $github_markdown.Permalink }}" integrity="{{ $github_markdown.Data.Integrity }}">
+</head>
+<div class="singleContent markdown-body">{{ .Content }}</div>
   </div>
 
 {{ end }}
