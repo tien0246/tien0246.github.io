@@ -36,14 +36,16 @@
         <time>{{ dateFormat .Site.Params.dateFormat  .Date}}</time>
         <p class="listItemDesc">{{.Params.description}}</p>
         <div class="listItemDetail">
-            {{ $avatars := .Params.avatar }}
-            {{ range $index, $term := .GetTerms "authors" }}
-              <img src="{{ index $avatars $index }}" loading="lazy" alt="" class="listItemAvatar"/>
-              <span>
-                
-                <a href="{{ $term.Permalink }}">{{ $term.Name }}</a>
-
-              </span>
+            {{ range .Params.authors }}
+                {{ $author := . }}
+                {{ with $.Site.Data.authors }}
+                    {{ with index . $author }}
+                        <img src="{{ .avatar | relURL }}" loading="lazy" alt="" class="listItemAvatar"/>
+                        <span>
+                            <a href="{{ `authors/` | relLangURL }}{{ .name | urlize }}">{{ .name }}</a>
+                        </span>
+                    {{ end }}
+                {{ end }}
             {{ end }}
           </div>
         <div class="listItemCategories">
