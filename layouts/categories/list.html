@@ -22,9 +22,9 @@
   {{ range .Paginator.Pages }}
     <div class="listItem">
       <img
-        src={{
+        src="{{ .Permalink }}{{
         .Params.image
-        }}
+        }}"
         alt="{{.Title}}"
         class="listItemImage"
         loading="lazy"
