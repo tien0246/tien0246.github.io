@@ -53,5 +53,7 @@
   <script src="{{ $effect.Permalink }}" integrity="{{ $effect.Data.Integrity }}" defer></script>
   {{ $hide_toc := resources.Get "js/hide_toc.js" | fingerprint }}
   <script src="{{ $hide_toc.Permalink }}" integrity="{{ $hide_toc.Data.Integrity }}" defer></script>
+  {{ $copy_code := resources.Get "js/copy_code.js" | fingerprint }}
+  <script src="{{ $copy_code.Permalink }}" integrity="{{ $copy_code.Data.Integrity }}" defer></script>
 </body>
 </html>
