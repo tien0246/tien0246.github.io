@@ -17,6 +17,8 @@ relativeURLs = true
   author = "authors"
 
 [markup]
+  [markup.goldmark.renderer]
+    unsafe = true
   [markup.highlight]
     noClasses = false
     style = "github-dark"
