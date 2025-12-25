@@ -23,6 +23,9 @@ jobs:
         with:
           hugo-version: '0.147.7'
 
+      - name: Update about.md
+        run: cp t_about/README.md content/about.md
+
       - name: Build Hugo site
         run: hugo --minify
 
