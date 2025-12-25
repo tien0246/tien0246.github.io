@@ -2,3 +2,6 @@
 	path = content/post
 	url = git@github.com:tien0246/blog.git
 	branch = main
+[submodule "t_about"]
+	path = t_about
+	url = https://github.com/tien0246/tien0246.git
