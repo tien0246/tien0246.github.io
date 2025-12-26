@@ -813,7 +813,7 @@
   padding: .2em .4em;
   margin: 0;
   font-size: 85%;
-  /* white-space: break-spaces; */
+  white-space: break-spaces;
   background-color: var(--bgColor-neutral-muted);
   border-radius: 6px;
 }
@@ -838,7 +838,7 @@
 .markdown-body pre>code {
   padding: 0;
   margin: 0;
-  word-break: normal;
+  /* word-break: normal; */
   white-space: pre;
   background: transparent;
   border: 0;
