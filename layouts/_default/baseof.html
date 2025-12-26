@@ -18,6 +18,7 @@
   {{ $syntax := resources.Get "styles/syntax.css" | fingerprint }}
   <link rel="stylesheet" href="{{ $syntax.Permalink }}" integrity="{{ $syntax.Data.Integrity }}">
   <title>{{ .Title }}</title>
+  {{ block "head-extra" . }}{{ end }}
 </head>
 <body>
     <div id="customAlertOverlay" class="modal-overlay hidden">

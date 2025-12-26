@@ -198,7 +198,7 @@
 
 .markdown-body mark {
   background-color: var(--bgColor-attention-muted);
-  color: var(--fgColor-default);
+  /* color: var(--fgColor-default); */
 }
 
 .markdown-body small {
@@ -813,7 +813,7 @@
   padding: .2em .4em;
   margin: 0;
   font-size: 85%;
-  white-space: break-spaces;
+  /* white-space: break-spaces; */
   background-color: var(--bgColor-neutral-muted);
   border-radius: 6px;
 }
@@ -859,8 +859,8 @@
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  color: var(--fgColor-default);
-  background-color: var(--bgColor-muted);
+  /* color: var(--fgColor-default); */
+  /* background-color: var(--bgColor-muted); */
   border-radius: 6px;
 }
 

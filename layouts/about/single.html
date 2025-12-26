@@ -1,8 +1,9 @@
-{{ define "main" }}
-<head>
+{{ define "head-extra" }}
     {{ $github_markdown := resources.Get "styles/github-markdown-custom.css" | fingerprint }}
     <link rel="stylesheet" href="{{ $github_markdown.Permalink }}" integrity="{{ $github_markdown.Data.Integrity }}">
-</head>
+{{ end }}
+
+{{ define "main" }}
 <div class="about-content markdown-body">
   {{ .Content }}
 </div>
