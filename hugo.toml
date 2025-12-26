@@ -9,7 +9,7 @@ relativeURLs = true
   pagerSize = 4
 
 [params]
-  description = "The fastest blog"
+  description = "Tien0246's personal blog, a place to share knowledge and experience about cybersecurity, programming, and technology."
   dateFormat = "Jan 2, 2006"
 
 [taxonomies]
